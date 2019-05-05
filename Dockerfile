@@ -1,8 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add --no-cache \
-	nodejs \
-	npm \
-	&& npm cache clean --force
+RUN apk add --update --no-cache \
+	npm
 
 CMD sh 
